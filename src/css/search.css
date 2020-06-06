@@ -1,0 +1,68 @@
+.logobar{
+  align-items: center;
+  width: 100%;
+  background-color: #00546B;
+  padding: 0px;
+  display: flex;
+  height: 60px;
+  
+  
+}
+
+.logo{
+  
+}
+
+.logo p{
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size:30px;
+  line-height:0px;
+  font-weight: 200;
+  color:#FFF257;
+  margin-left:700px ;
+  margin-right: 150px;
+  
+    
+}
+
+.searchbar{
+  display: flex;
+  margin: 3%;
+  height: 25px;
+  margin-left: 150px;
+}
+
+.searchbar input{
+  background-color: slategray;
+  border-color: slategray;
+}
+
+.searchbar button{
+  background-color: transparent;
+  border-color: transparent;
+
+  
+}
+
+.searchbar button:active {
+  outline: none;
+  border: none;
+}
+
+.searchbar buttom:hover{
+  cursor: pointer;
+
+}
+
+.searchbar button:focus{
+  outline: none 0;
+}
+
+
+
+
+
+  
+      
+

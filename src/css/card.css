@@ -1,0 +1,39 @@
+.card-anime{
+    background-color:var(--background-card-color);
+    color: #0000;
+    max-width: 220px;
+    margin: 15px;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.poster-image{
+    background-image: url("../images/71qooWMXDhL.jpg");
+    background-size: cover;
+    padding: 90px;
+    height: 90px;
+    border-radius: 25px 25px 0px 0px;
+}
+.card-detail{
+    text-align: left;
+    padding: 5px;
+}
+
+.card-detail h1 h2{
+    text-align: left;
+}
+
+.card-detail span{
+    color: var(--destak-color);
+    
+}
+
+.titulo-anime{
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.descricao-anime{
+    color: black;
+    font-size: 13px;
+}
