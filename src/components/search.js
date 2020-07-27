@@ -1,25 +1,27 @@
-import React from 'react';
-import '../css/search.css';
-import search_icon from '../images/search.png';
+import '../css/search.css'
+import search_icon from '../images/search.png'
+import React, { useState } from 'react'
 
 
-function Search() {
+function Search(props) {
+
+  const [search, setSearch] = useState("");
+
   return (
     <>
-      <div class="logobar">
-
-        <div class="searchbar">
-          <input
-            type="text"
+      <div className="logobar">
+        <form action="">
+          <input type="text"
             placeholder="Pesquisar"
-            class="search"
-          />
-        </div>
+            name="search"
+            id="search"
+            onChange={(e) => setSearch(e.target.value)} />
+          <button type="submit">Procurar</button>
+        </form>
 
-        <div class="logo">
+        <div className="logo">
           <p>NavyTube</p>
         </div>
-
 
 
       </div>

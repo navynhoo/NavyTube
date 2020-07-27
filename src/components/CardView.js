@@ -1,23 +1,33 @@
 import React from 'react';
 import '../css/card.css'
 
-function CardView() {
+function CardView({ serie }) {
+  const imgUrl = "https://image.tmdb.org/t/p/w200"
   return (
+
+    /*<section className="cards">*/
     <div className="card-anime">
-      <div className="poster-image"></div>
-      <div className="card-detail">
-        
-        <h1 className="titulo-anime">BOKU NO HERO ACADEMIA</h1>
-        <h2 className="descricao-anime">Shounen, escolar</h2>
-        <h2 className="descricao-anime"> 89 Episódios</h2>
-        <span className="material-icons">star</span>
-        <h2 className="descricao-anime">9.9</h2>
+      <div className="poster-image"
+        style={{
+          backgroundImage: `url(${imgUrl}${serie.poster_path})`
+        }}
+      >
       </div>
-      <a href="#">
-        <span className="material-icons">play_circle_filled</span>
-        Assistir
+      <div className="card-detail">
+
+        <h1 className="titulo-anime">{serie.name}</h1>
+        <div className="text">
+          <h2 className="descricao-anime"> {serie.first_air_date} </h2>
+          <h2 className="descricao-anime"> <span className="material-icons">star</span> {serie.vote_average}</h2>
+        </div>
+      </div>
+      <button className="botao">
+        <a href="#">
+          <span className="material-icons">play_circle_filled</span> Assistir
       </a>
+      </button>
     </div>
+    /*</section>*/
   );
 }
 

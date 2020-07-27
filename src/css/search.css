@@ -5,60 +5,49 @@
   padding: 0px;
   display: flex;
   height: 60px;
-  
-  
 }
 
-.logo{
-  
+.logobar form {
+  margin-left: 5%;
+}
+
+.logobar form input {
+  background-color: #70E0FF;
+  width: 500px;
+  border: 0px;
+  border-radius: 20px;
+  height: 30px;
+  padding-left: 15px;
+}
+
+.logobar form button {
+  margin-left: 10px;
+  background-color: #FFF257;
+  border: none;
+  color: #00546B;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 30px;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+}
+
+.logobar form button:hover{
+  background-color: #ccc148; 
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .logo p{
-
   font-family: 'Times New Roman', Times, serif;
   font-size:30px;
   line-height:0px;
   font-weight: 200;
   color:#FFF257;
-  margin-left:700px ;
+  margin-left:400px ;
   margin-right: 150px;
-  
-    
 }
-
-.searchbar{
-  display: flex;
-  margin: 3%;
-  height: 25px;
-  margin-left: 150px;
-}
-
-.searchbar input{
-  background-color: slategray;
-  border-color: slategray;
-}
-
-.searchbar button{
-  background-color: transparent;
-  border-color: transparent;
-
-  
-}
-
-.searchbar button:active {
-  outline: none;
-  border: none;
-}
-
-.searchbar buttom:hover{
-  cursor: pointer;
-
-}
-
-.searchbar button:focus{
-  outline: none 0;
-}
-
 
 
 

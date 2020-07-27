@@ -1,39 +1,81 @@
-.card-anime{
-    background-color:var(--background-card-color);
+.card-anime {
+    background-color: var(--background-card-color);
     color: #0000;
-    max-width: 220px;
-    margin: 15px;
+    width: 200px;
+    margin: 10px;
     box-shadow: 3px 3px 3px gray;
     border-radius: 25px 25px 0px 0px;
+    display: block;
+    height: 475px;
 }
 
-.poster-image{
-    background-image: url("../images/71qooWMXDhL.jpg");
+.poster-image {
     background-size: cover;
     padding: 90px;
     height: 90px;
     border-radius: 25px 25px 0px 0px;
 }
-.card-detail{
+
+.card-detail {
     text-align: left;
     padding: 5px;
 }
 
-.card-detail h1 h2{
+.card-detail h1 h2 {
     text-align: left;
 }
 
-.card-detail span{
+.card-detail span {
     color: var(--destak-color);
-    
 }
 
-.titulo-anime{
+.titulo-anime {
     color: var(--primary-color);
     font-size: 15px;
 }
 
-.descricao-anime{
+.descricao-anime {
     color: black;
     font-size: 13px;
+    text-align: left;
+}
+
+.cards {
+    grid-column: 2 / span 12;
+    /* espaço de cada coluna (12 partes) */
+    display: grid;
+    grid-template-columns: 1fr repeat(10, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+}
+
+.card {
+    grid-column-end: span 3;
+    /* cada card vai ocupar 3 de espaço de cada coluna */
+    display: flex;
+    flex-direction: column;
+    background-color: #44475a;
+    transition: all 0.3 ease 0s;
+    box-shadow: 1px 4px 10px black;
+    /*personalizando e definindo e espaçõ de cada card */
+}
+
+.text {}
+
+.material-icons {
+    margin-left: 8px;
+}
+
+.botao {
+    border-radius: 5px;
+    background: var(--destak-color);
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    text-align: center;
+}
+
+.botao a {
+    color: ivory;
+    text-decoration: none;
 }
